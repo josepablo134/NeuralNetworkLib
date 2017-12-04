@@ -121,7 +121,7 @@ class NeuralNetwork:
                     #Peso de la neurona j de la capa superior conectada a
                         #la neurona k de la capa actual
                     #Por el error de la neurona j de la capa superior
-                    Wk += self.W[layer+1][j][neuron]*dk[j]
+                    Wk += self.W[layer+1][j][neuron+1]*dk[j]
                 temp[neuron] = Wk*Oh
             Dh.append(temp)
             #Actualizamos los terminos dk superiores por los nuevos dk
