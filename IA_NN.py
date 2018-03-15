@@ -146,4 +146,3 @@ class NeuralNetwork:
                 #Actualizacion del bias!
             for k in range( self.neurons[layer] ):
                     self.W[layer][neuron][0] += alpha*Dh[-layer][k]
-        return True#,Dh#,Dk
